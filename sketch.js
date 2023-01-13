@@ -5,6 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
 var ball;
+var groundObj,leftSide,rightSide
 var radius=40
 var world
 
@@ -54,7 +55,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.body.applyForce(ball,ball.position,{x:85,y:-85})
+		Matter.Body.applyForce(ball,ball.position,{x:85,y:-85})
 	}
 }
 
